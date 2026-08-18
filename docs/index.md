@@ -9,9 +9,9 @@ This directory is the documentation hub for the Runvil Libraries monorepo.
 ## Getting Started
 
 - Read the project [README](../README.md) for an overview and build instructions.
-- Review the [initial specification](./specs/RVL-0001-runvil-libs.md) for the libraries' requirements, scope, and roadmap.
+- Review the [initial specification](./specs/RVL-4Y8UP-runvil-libraries.md) for the libraries' requirements, scope, and roadmap.
 
 ## Conventions
 
 - Documentation is written in English and kept in Markdown.
-- Every specification lives under `docs/specs/` and uses a unique alphanumeric SpecID (e.g., `RVL-0001`).
+- Every specification lives under `docs/specs/` and uses a unique alphanumeric SpecID (e.g., `RVL-N459G`).

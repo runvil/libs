@@ -2,7 +2,7 @@
 
 | Field       | Value                                       |
 | ----------- | ------------------------------------------- |
-| SpecID      | RVL-0001                                    |
+| SpecID      | RVL-4Y8UP                                   |
 | Title       | Runvil Libraries — Initial Specification    |
 | Status      | Draft                                       |
 | Version     | 0.1.0                                       |
@@ -94,18 +94,15 @@ these into its integrated application model.
 - S3 — The framework's `cli` package (Phase P1) builds against these libraries.
 - S4 — Libraries are usable standalone without depending on the framework.
 
-## 8. Future Directions
+## 8. Related Specifications
 
-| Direction | Planned Libraries                  |
-| --------- | ---------------------------------- |
-| Async     | `async-utils`                      |
-| HTTP      | `http-client`                      |
-| Server    | `validators`                       |
-
-Additions are additive and must not break existing libraries.
+| SpecID    | Title                                                     |
+| --------- | --------------------------------------------------------- |
+| [RVL-N459G](./RVL-N459G-terminal-io-rendering.md) | Terminal I/O & Rendering                         |
+| [RVL-CHBZ4](./RVL-CHBZ4-errors-exit-codes.md)     | Core Errors & Exit Codes                          |
 
 ## 9. References
 
-- [Runvil Framework — RVF-0001](https://github.com/runvil/runvil-framework/blob/main/docs/specs/RVF-0001-runvil-framework.md) — Initial specification for the Runvil meta-framework.
+- [Runvil Framework — RVF-QOFJK](https://github.com/runvil/runvil-framework/blob/main/docs/specs/RVF-QOFJK-runvil-meta-framework.md) — Initial specification for the Runvil meta-framework.
 - [runvil-framework](https://github.com/runvil/runvil-framework) — the meta-framework consuming these libraries.
 - Project `README.md` for building and testing instructions.
