@@ -1,3 +1,3 @@
-module github.com/runvil/runvil-libs
+module github.com/runvil/libs
 
 go 1.22

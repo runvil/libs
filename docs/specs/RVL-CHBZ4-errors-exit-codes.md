@@ -18,13 +18,20 @@ canonical exit-code taxonomy.
 
 This specification formalizes that taxonomy and the rules governing its use.
 
-## 2. Goals
+## 2. Problem Statement
+
+Exit-code conventions differ across Go CLIs — ad-hoc integer codes, ambiguous
+meanings, and no shared error type carrying a process status. Automation cannot
+trust process termination status, and expected misuse is not distinguished from
+runtime failure.
+
+## 3. Goals
 
 - G1 — Define a compact, industry-aligned exit-code taxonomy (0/1/2).
 - G2 — Provide an error model that carries a stable exit code end-to-end.
 - G3 — Ensure consistent semantics across the framework, libraries, and generated applications.
 
-## 3. Non-Goals
+## 4. Non-Goals
 
 The following are explicitly out of scope for the initial phase:
 
@@ -32,9 +39,9 @@ The following are explicitly out of scope for the initial phase:
 - NG2 — A logging subsystem; diagnostics formatting lives in the framework.
 - NG3 — Error wrapping/context chains beyond the basic message + code model.
 
-## 4. Requirements
+## 5. Requirements
 
-### 4.1 Exit-Code Taxonomy
+### 5.1 Exit-Code Taxonomy
 
 | ID         | Requirement                                                       | Priority |
 | ---------- | ----------------------------------------------------------------- | -------- |
@@ -43,7 +50,7 @@ The following are explicitly out of scope for the initial phase:
 | RVL-ER-003 | Define `2` as usage error (bad or missing arguments/configuration). | Must   |
 | RVL-ER-004 | Provide a mapping from a raw process code to the canonical value.  | Must     |
 
-### 4.2 Error Model
+### 5.2 Error Model
 
 | ID         | Requirement                                                       | Priority |
 | ---------- | ----------------------------------------------------------------- | -------- |
@@ -52,29 +59,29 @@ The following are explicitly out of scope for the initial phase:
 | RVL-ER-007 | Provide constructors for usage and failure errors.                | Must     |
 | RVL-ER-008 | Expose the associated exit code for process-level mapping.        | Must     |
 
-### 4.3 Usage Rules
+### 5.3 Usage Rules
 
 | ID         | Requirement                                                       | Priority |
 | ---------- | ----------------------------------------------------------------- | -------- |
 | RVL-ER-009 | Exit code `2` is reserved for invalid user input, never for runtime failures | Must |
 | RVL-ER-010 | Exit code `1` must not be used to signal expected CLI mis-usage.  | Must     |
 
-## 5. Non-Functional Requirements
+## 6. Non-Functional Requirements
 
 - NFR1 — **Memory safety.** The `unsafe` package must not be used.
 - NFR2 — **Friction-free.** The error model must be trivially constructible in handlers.
 - NFR3 — **Portability.** Exit-code values are numeric and OS-agnostic.
 - NFR4 — **Quality gates.** `gofmt`, `go vet ./...`, and `go test ./...` must pass.
 
-## 6. Success Criteria
+## 7. Success Criteria
 
 - S1 — The taxonomy mapping and error constructors are covered by tests.
 - S2 — All framework CLI commands return only codes from the taxonomy.
 - S3 — Documentation comments cover every exported identifier.
 
-## 7. References
+## 8. References
 
 - [RVL-4Y8UP](./RVL-4Y8UP-runvil-libraries.md) — Runvil Libraries initial specification.
 - [RVL-N459G](./RVL-N459G-terminal-io-rendering.md) — Terminal I/O & Rendering.
-- [RVF-QZTY2](https://github.com/runvil/runvil-framework/blob/main/docs/specs/RVF-QZTY2-cli-errors-diagnostics.md) — CLI Errors & Diagnostics.
-- [RVF-M8SSR](https://github.com/runvil/runvil-framework/blob/main/docs/specs/RVF-M8SSR-cli-application-model.md) — CLI Application Model.
+- [RVF-QZTY2](https://github.com/runvil/framework/blob/main/docs/specs/RVF-QZTY2-cli-errors-diagnostics.md) — CLI Errors & Diagnostics.
+- [RVF-M8SSR](https://github.com/runvil/framework/blob/main/docs/specs/RVF-M8SSR-cli-application-model.md) — CLI Application Model.

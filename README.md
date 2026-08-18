@@ -1,10 +1,10 @@
 # Runvil Libraries
 
-**Runvil Libraries** is a monorepo of modular, reusable libraries written in [Go](https://go.dev/) for the Runvil ecosystem. It hosts the shared building blocks that power the [Runvil meta-framework](https://github.com/runvil/runvil-framework) and any application built on top of it.
+**Runvil Libraries** is a monorepo of modular, reusable libraries written in [Go](https://go.dev/) for the Runvil ecosystem. It hosts the shared building blocks that power the [Runvil meta-framework](https://github.com/runvil/framework) and any application built on top of it.
 
 ## Overview
 
-Organized as a Go module monorepo, `runvil-libs` exposes each concern as an independent package. Libraries are versioned and released on their own schedule, so consumers pull in exactly what they need without inheriting unused dependencies. A shared core package defines the common primitives that keep the ecosystem consistent.
+Organized as a Go module monorepo, `libs` exposes each concern as an independent package. Libraries are versioned and released on their own schedule, so consumers pull in exactly what they need without inheriting unused dependencies. A shared core package defines the common primitives that keep the ecosystem consistent.
 
 Wherever the Go standard library already provides the functionality, Runvil intentionally does not re-implement it — the ecosystem standardizes on `flag`, `log/slog`, and `os` rather than shipping parallel packages.
 
