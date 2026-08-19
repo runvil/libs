@@ -55,7 +55,7 @@ go test ./...
 
 The following libraries are planned:
 
-- `runvil-http-client` — HTTP client abstractions.
+- `http-client` — HTTP client abstractions.
 
 ## Contributing
 
