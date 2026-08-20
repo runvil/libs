@@ -2,7 +2,7 @@
 
 | Field       | Value                                       |
 | ----------- | ------------------------------------------- |
-| SpecID      | RVL-4Y8UP                                   |
+| SpecID      | RVL-M1ZKS                                   |
 | Title       | Runvil Libraries — Initial Specification    |
 | Status      | Draft                                       |
 | Date        | 2026-08-18                                  |
@@ -104,11 +104,11 @@ these into its integrated application model.
 
 | SpecID    | Title                                                     |
 | --------- | --------------------------------------------------------- |
-| [RVL-N459G](./RVL-N459G-terminal-io-rendering.md) | Terminal I/O & Rendering                         |
-| [RVL-CHBZ4](./RVL-CHBZ4-errors-exit-codes.md)     | Core Errors & Exit Codes                          |
+| [RVL-R934Y](./RVL-TERM-R934Y-terminal-io-rendering.md) | Terminal I/O & Rendering                         |
+| [RVL-W0J2X](./RVL-CORE-W0J2X-errors-exit-codes.md)     | Core Errors & Exit Codes                          |
 
 ## 10. References
 
-- [Runvil Framework — RVF-QOFJK](https://github.com/runvil/framework/blob/main/docs/specs/RVF-QOFJK-runvil-meta-framework.md) — Initial specification for the Runvil meta-framework.
+- [Runvil Framework — RVF-CMBZJ](https://github.com/runvil/framework/blob/main/docs/specs/RVF-META-CMBZJ-runvil-meta-framework.md) — Initial specification for the Runvil meta-framework.
 - [framework](https://github.com/runvil/framework) — the meta-framework consuming these libraries.
 - Project `README.md` for building and testing instructions.

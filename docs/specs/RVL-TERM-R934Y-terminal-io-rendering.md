@@ -2,7 +2,7 @@
 
 | Field       | Value                                       |
 | ----------- | ------------------------------------------- |
-| SpecID      | RVL-N459G                                   |
+| SpecID      | RVL-R934Y                                   |
 | Title       | Terminal I/O & Rendering                    |
 | Status      | Draft                                       |
 | Date        | 2026-08-18                                  |
@@ -79,7 +79,7 @@ The following are explicitly out of scope for the initial phase:
 
 ## 8. References
 
-- [RVL-4Y8UP](./RVL-4Y8UP-runvil-libraries.md) — Runvil Libraries initial specification.
-- [RVL-CHBZ4](./RVL-CHBZ4-errors-exit-codes.md) — Core Errors & Exit Codes.
-- [RVF-WXQQ5](https://github.com/runvil/framework/blob/main/docs/specs/RVF-WXQQ5-cli-output-formatting.md) — CLI Output & Formatting.
-- [RVF-LJWEB](https://github.com/runvil/framework/blob/main/docs/specs/RVF-LJWEB-cli-help-usage.md) — CLI Help & Usage.
+- [RVL-M1ZKS](./RVL-CORE-M1ZKS-runvil-libraries.md) — Runvil Libraries initial specification.
+- [RVL-W0J2X](./RVL-CORE-W0J2X-errors-exit-codes.md) — Core Errors & Exit Codes.
+- [RVF-NPFSE](https://github.com/runvil/framework/blob/main/docs/specs/RVF-CLI-NPFSE-cli-output-formatting.md) — CLI Output & Formatting.
+- [RVF-MFA0T](https://github.com/runvil/framework/blob/main/docs/specs/RVF-CLI-MFA0T-cli-help-usage.md) — CLI Help & Usage.

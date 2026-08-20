@@ -2,7 +2,7 @@
 
 | Field       | Value                                       |
 | ----------- | ------------------------------------------- |
-| SpecID      | RVL-X7C4M                                   |
+| SpecID      | RVL-2X1QZ                                   |
 | Title       | Configuration Loading                       |
 | Status      | Draft                                       |
 | Date        | 2026-08-19                                  |
@@ -50,7 +50,7 @@ drift out of sync with documentation. `config` removes that duplication.
 - NG1 — Config file watching or hot reload.
 - NG2 — More serialization formats beyond YAML in this phase.
 - NG3 — Remote secrets managers or encryption.
-- NG4 — Config validation rules (see RVL-B9TW2); precedence is separate.
+- NG4 — Config validation rules (see RVL-LHANF); precedence is separate.
 - NG5 — Defaults expressed *outside* the target struct (zero values are the base).
 
 ## 5. Requirements
@@ -111,11 +111,11 @@ drift out of sync with documentation. `config` removes that duplication.
 
 | SpecID    | Title                                           |
 | --------- | ----------------------------------------------- |
-| [RVL-4Y8UP](https://github.com/runvil/libs/blob/main/docs/specs/RVL-4Y8UP-runvil-libraries.md) | Runvil Libraries — Initial Specification |
-| [RVL-B9TW2](./RVL-B9TW2-struct-validation.md) | Struct Validation |
-| [RVN-K2SQ7](https://github.com/runvil/runvil/blob/main/docs/specs/RVN-K2SQ7-runvil-run-dev-deploy.md) | runvil run/dev/deploy (consumer) |
+| [RVL-M1ZKS](https://github.com/runvil/libs/blob/main/docs/specs/RVL-CORE-M1ZKS-runvil-libraries.md) | Runvil Libraries — Initial Specification |
+| [RVL-LHANF](./RVL-VALIDATE-LHANF-struct-validation.md) | Struct Validation |
+| [RVN-6K41E](https://github.com/runvil/runvil/blob/main/docs/specs/RVN-RUN-6K41E-runvil-run-dev-deploy.md) | runvil run/dev/deploy (consumer) |
 
 ## 9. References
 
-- [RVF-8G3WQ](https://github.com/runvil/framework/blob/main/docs/specs/RVF-8G3WQ-runvil-web-framework.md) — Runvil Web Framework (consumer).
+- [RVF-M07QS](https://github.com/runvil/framework/blob/main/docs/specs/RVF-WEB-M07QS-runvil-web-framework.md) — Runvil Web Framework (consumer).
 - `gopkg.in/yaml.v3` — YAML library used for file decoding.

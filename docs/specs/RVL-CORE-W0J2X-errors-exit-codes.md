@@ -2,7 +2,7 @@
 
 | Field       | Value                                       |
 | ----------- | ------------------------------------------- |
-| SpecID      | RVL-CHBZ4                                   |
+| SpecID      | RVL-W0J2X                                   |
 | Title       | Core Errors & Exit Codes                    |
 | Status      | Draft                                       |
 | Date        | 2026-08-18                                  |
@@ -80,7 +80,7 @@ The following are explicitly out of scope for the initial phase:
 
 ## 8. References
 
-- [RVL-4Y8UP](./RVL-4Y8UP-runvil-libraries.md) — Runvil Libraries initial specification.
-- [RVL-N459G](./RVL-N459G-terminal-io-rendering.md) — Terminal I/O & Rendering.
-- [RVF-QZTY2](https://github.com/runvil/framework/blob/main/docs/specs/RVF-QZTY2-cli-errors-diagnostics.md) — CLI Errors & Diagnostics.
-- [RVF-M8SSR](https://github.com/runvil/framework/blob/main/docs/specs/RVF-M8SSR-cli-application-model.md) — CLI Application Model.
+- [RVL-M1ZKS](./RVL-CORE-M1ZKS-runvil-libraries.md) — Runvil Libraries initial specification.
+- [RVL-R934Y](./RVL-TERM-R934Y-terminal-io-rendering.md) — Terminal I/O & Rendering.
+- [RVF-KAKQL](https://github.com/runvil/framework/blob/main/docs/specs/RVF-CLI-KAKQL-cli-errors-diagnostics.md) — CLI Errors & Diagnostics.
+- [RVF-5XJFC](https://github.com/runvil/framework/blob/main/docs/specs/RVF-CLI-5XJFC-cli-application-model.md) — CLI Application Model.

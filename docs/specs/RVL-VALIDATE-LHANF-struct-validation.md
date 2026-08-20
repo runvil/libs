@@ -2,7 +2,7 @@
 
 | Field       | Value                                       |
 | ----------- | ------------------------------------------- |
-| SpecID      | RVL-B9TW2                                   |
+| SpecID      | RVL-LHANF                                   |
 | Title       | Struct Validation                          |
 | Status      | Draft                                       |
 | Date        | 2026-08-19                                  |
@@ -15,7 +15,7 @@ Runvil requests and configs need validating structured inputs (forms, JSON
 bodies, CLI flags, settings). Validation is a generic concern: it inspects a
 typed struct, applies declared rules, and reports failures — none of which
 depends on `net/http` or the framework. It belongs in Runvil Libraries as a
-framework-agnostic dependency so the `web` pipeline (RVF-H3QD8) and CLI layers
+framework-agnostic dependency so the `web` pipeline (RVF-230KF) and CLI layers
 can share one rule model.
 
 Rules are declared inline on struct fields with a `validate` tag; the package
@@ -37,13 +37,13 @@ removes that duplication while keeping validation explicit and type-safe.
 - G3 — Return a structured error aggregating all field failures.
 - G4 — Stay framework-agnostic and stdlib-only (no `framework` import).
 - G5 — Stay explicit: no reflection-driven control flow beyond reading tags.
-- G6 — Integrate cleanly with `config` (RVL-X7C4M) for validated settings.
+- G6 — Integrate cleanly with `config` (RVL-2X1QZ) for validated settings.
 
 ## 4. Non-Goals
 
 - NG1 — Cross-field or custom (registration-based) validation callbacks in this phase.
 - NG2 — Automatic struct branching, `union` types, or compile-time rule checks.
-- NG3 — HTTP response formatting (the web layer, RVF-H3QD8, owns that).
+- NG3 — HTTP response formatting (the web layer, RVF-230KF, owns that).
 - NG4 — Validation of untyped `map[string]any` shapes.
 - NG5 — A separate rule language beyond the struct tag syntax.
 
@@ -99,18 +99,18 @@ removes that duplication while keeping validation explicit and type-safe.
 
 - S1 — A request DTO using `required`, `min`, `email` rejects bad input with a `ValidationError` listing every field.
 - S2 — `validate.Field("a@b.c", "email")` passes while `"nope"` fails.
-- S3 — A config struct loaded via RVL-X7C4M validates in one call before use.
+- S3 — A config struct loaded via RVL-2X1QZ validates in one call before use.
 - S4 — `validate` compiles and passes tests with `gopkg.in/yaml.v3` absent from its own dependency graph.
 
 ## 8. Related Specifications
 
 | SpecID    | Title                                           |
 | --------- | ----------------------------------------------- |
-| [RVL-4Y8UP](https://github.com/runvil/libs/blob/main/docs/specs/RVL-4Y8UP-runvil-libraries.md) | Runvil Libraries — Initial Specification |
-| [RVL-X7C4M](./RVL-X7C4M-configuration-loading.md) | Configuration Loading |
-| [RVF-H3QD8](https://github.com/runvil/framework/blob/main/docs/specs/RVF-H3QD8-http-api-pipeline.md) | HTTP & API Pipeline (consumer) |
+| [RVL-M1ZKS](https://github.com/runvil/libs/blob/main/docs/specs/RVL-CORE-M1ZKS-runvil-libraries.md) | Runvil Libraries — Initial Specification |
+| [RVL-2X1QZ](./RVL-CONFIG-2X1QZ-configuration-loading.md) | Configuration Loading |
+| [RVF-230KF](https://github.com/runvil/framework/blob/main/docs/specs/RVF-HTTP-230KF-http-api-pipeline.md) | HTTP & API Pipeline (consumer) |
 
 ## 9. References
 
-- [RVF-8G3WQ](https://github.com/runvil/framework/blob/main/docs/specs/RVF-8G3WQ-runvil-web-framework.md) — Runvil Web Framework.
+- [RVF-M07QS](https://github.com/runvil/framework/blob/main/docs/specs/RVF-WEB-M07QS-runvil-web-framework.md) — Runvil Web Framework.
 - Stdlib `reflect`, `regexp`, `net/mail`, `strconv`.
